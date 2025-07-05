@@ -1,0 +1,17 @@
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/Main.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/config/ConfigPrimaryDb.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/config/ConfigSecondaryDb.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/controller/CardController.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/controller/PedidosHelper.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/controller/ProdutosTableController.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/controller/SemanaHelper.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/dto/PedidosDTO.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/javafx/JavaFxApplication.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/model/primary/Maquina.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/model/primary/ProdutoLocal.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/model/secondary/ProdutoExterno.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/repository/primaryDataSource/MaquinasRepository.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/repository/primaryDataSource/ProdutoLocalRepository.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/repository/secundaryDataSource/ProdutoExternoRepository.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/service/ProdutoLocalService.java
+/home/dostoievski/repos/prototipo/src/main/java/com/prototipo/p1/view/CardFactory.java

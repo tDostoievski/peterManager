@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="955.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.prototipo.p1.controller.ProdutosTableController">
+   <content>
+      <AnchorPane prefHeight="549.0" prefWidth="947.0">
+         <children>
+            <VBox fx:id="segundaBox" alignment="TOP_CENTER" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Segunda" />
+                  <VBox prefHeight="152.0" prefWidth="136.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="tercaBox" alignment="TOP_CENTER" layoutX="136.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Terça" />
+               </children>
+            </VBox>
+            <VBox fx:id="quartaBox" alignment="TOP_CENTER" layoutX="272.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Quarta" />
+               </children>
+            </VBox>
+            <VBox fx:id="quintaBox" alignment="TOP_CENTER" layoutX="406.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Quinta" />
+               </children>
+            </VBox>
+            <VBox fx:id="sextaBox" alignment="TOP_CENTER" layoutX="542.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Sexta" />
+               </children>
+            </VBox>
+            <VBox fx:id="sabadoBox" alignment="TOP_CENTER" layoutX="678.0" layoutY="-1.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Sabado" />
+               </children>
+            </VBox>
+            <VBox fx:id="domingoBox" alignment="TOP_CENTER" layoutX="814.0" prefHeight="549.0" prefWidth="135.42">
+               <children>
+                  <Label text="Domingo" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
