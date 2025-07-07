@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="segundaBox" alignment="TOP_CENTER" prefHeight="549.0" prefWidth="135.42" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prototipo.p1.controller.ColumnController">
+   <children>
+      <Label id="numberDay" fx:id="numberDay" />
+      <Label fx:id="weekDay" text="Label" />
+   </children>
+</VBox>
