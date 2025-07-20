@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:controller="com.prototipo.p1.controller.CardController"
-      prefHeight="270.0" prefWidth="218.0"
-      xmlns="http://javafx.com/javafx/22"
-      xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="270.0" prefWidth="218.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prototipo.p1.controller.CardController">
    <children>
       <Label fx:id="labelOp" text="Num OP" />
       <Label fx:id="labelCodigo" text="Código" />
@@ -21,6 +19,6 @@
       <Label fx:id="labelMaquina" text="Máquina" />
       <Label fx:id="labelStatus" text="Status" />
       <Label fx:id="labelData" text="Data" />
+      <TextField fx:id="textFieldData" visible="false" />
    </children>
 </VBox>
-

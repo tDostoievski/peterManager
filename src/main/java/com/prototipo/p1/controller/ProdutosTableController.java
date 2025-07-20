@@ -3,7 +3,6 @@ package com.prototipo.p1.controller;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +16,6 @@ import com.prototipo.p1.view.ColumnFactory;
 
 import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -28,6 +26,9 @@ public class ProdutosTableController {
 
     @Autowired
     private PedidosHelper pedidosHelper;
+
+    @Autowired 
+    private ColumnHelper columnHelper;
 
     @Autowired
     private CardFactory cardFactory;
@@ -61,27 +62,8 @@ public class ProdutosTableController {
     
         List<ProdutoExterno> produtosExternos = List.of(p1, p2, p3);
 
-        Optional<LocalDate> minDatOpt = produtosExternos.stream()
-        .map(ProdutoExterno::getData)
-        .min(LocalDate::compareTo); 
+        ArrayList<LocalDate> todasAsDatas = columnHelper.geraDatas(produtosExternos);
 
-        Optional<LocalDate> maxDatOpt = produtosExternos.stream()
-        .map(ProdutoExterno::getData)
-        .max(LocalDate::compareTo);
-
-        if (minDatOpt.isEmpty() || maxDatOpt.isEmpty()){
-                 System.err.println("Sem pedidos");
-        }
-            
-        LocalDate minDate = minDatOpt.get();
-        LocalDate maxDate = maxDatOpt.get();
-
-        ArrayList<LocalDate> todasAsDatas = new ArrayList<>();
-        LocalDate current = minDate; 
-        while (!current.isAfter(maxDate)){
-        todasAsDatas.add(current);
-        current = current.plusDays(1); 
-        }
 
         for (LocalDate date : todasAsDatas){
             VBox column = columnFactory.geraColuna(date);  
